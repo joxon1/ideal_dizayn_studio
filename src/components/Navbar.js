@@ -14,9 +14,9 @@ const Navbar = () => {
         {bars ? <FaTimes /> : <FaBars />}
       </div>
       <div className="navbar_wrapper">
-        <div className="navbar_logo">
+        <Link to="/" className="navbar_logo">
           <img src={logo} alt="IDEAL DIZAYN STUDIO" />
-        </div>
+        </Link>
         <div className="navbar_link">
           {NavbarData.map((item) => (
             <Link className="navbar_link_item" to={item.path} key={item.id}>
