@@ -6,6 +6,7 @@ import {
   Switch,
 } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Slider from "./components/Slider";
 
 import Home from "./pages/Home";
 import Prays from "./pages/Prays";

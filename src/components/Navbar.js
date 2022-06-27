@@ -1,22 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import NavbarData from "../data/NavbarData";
 import "../style/Navbar.css";
-import logo_photostudio from "../assets/logo_photostudio.png";
+import { FaTimes, FaBars } from "react-icons/fa";
+import logo from "../assets/logo_photostudio.png";
 
 const Navbar = () => {
-
-  
-
+  const [bars, setBars] = useState(false);
+  const showBars = () => setBars(!bars);
   return (
     <div className="navbar_container">
+      <div className="bar_container" onClick={showBars}>
+        {bars ? <FaTimes /> : <FaBars />}
+      </div>
       <div className="navbar_wrapper">
-        <Link to="/" className="navbar_logo">
-          <img src={logo_photostudio} alt="IDEAL DIZAYN STUDIO" />
-        </Link>
-        <div className="navbar_menu">
+        <div className="navbar_logo">
+          <img src={logo} alt="IDEAL DIZAYN STUDIO" />
+        </div>
+        <div className="navbar_link">
           {NavbarData.map((item) => (
-            <Link to={item.path} className="navbar_menu_item">
+            <Link className="navbar_link_item" to={item.path} key={item.id}>
               {item.link}
             </Link>
           ))}
