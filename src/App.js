@@ -6,10 +6,10 @@ import {
   Switch,
 } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Slider from "./components/Slider";
 
 import Home from "./pages/Home";
 import Prays from "./pages/Prays";
+import About from "./pages/About";
 
 const App = () => {
   return (
@@ -18,6 +18,7 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/prays" component={Prays} />
+        <Route path="/about" component={About} />
         <Redirect to="/" />
       </Switch>
     </Router>
