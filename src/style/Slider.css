@@ -13,11 +13,46 @@
   animation-direction: alternate;
   z-index: -1;
 }
+.mobile{
+  display: none;
+}
+.mobile_slider {
+  width: 100%;
+  height: 23%;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  display: flex;
+  overflow: hidden;
+}
+.mobile_slider img {
+  height: 100%;
+  width: 100%;
+  animation: verticale 20s infinite;
+  animation-direction: alternate;
+  object-fit: cover;
+}
 @keyframes horizont {
   0% {
     transform: translateY(0);
   }
   100% {
     transform: translateY(-100%);
+  }
+}
+@keyframes verticale {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@media screen and (max-width: 768px) {
+  .slider_container {
+    display: none;
+  }
+  .mobile{
+    display: block;
   }
 }

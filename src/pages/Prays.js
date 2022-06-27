@@ -1,5 +1,4 @@
 import React from "react";
-import Table from "../components/Table";
 import PraysData from "../data/PraysData";
 import "../style/Prays.css";
 
@@ -17,7 +16,14 @@ const Prays = () => {
             </h2>
             <table className="list">
               {item.product.map((product, index) => {
-                return <Table key={index} {...product} />;
+                return (
+                  <tr className="table_container" key={index}>
+                    <td className="table_title">{product.title}</td>
+                    <td>{product.tipe}</td>
+                    <td>{product.things}</td>
+                    <td>{product.price}</td>
+                  </tr>
+                );
               })}
             </table>
           </div>
