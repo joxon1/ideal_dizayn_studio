@@ -1,7 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import AboutSlider from "../data/AboutSlider";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { FaQuoteRight } from "react-icons/fa";
+
 import "../style/About.css";
 
 const About = () => {
+  const [people, setPeople] = useState(AboutSlider);
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const lastIndex = people.length - 1;
+    if (index < 0) {
+      setIndex(lastIndex);
+    }
+    if (index > lastIndex) {
+      setIndex(0);
+    }
+  }, [index, people]);
+
+  useEffect(() => {
+    const slider = setInterval(() => {
+      setIndex(index + 1);
+    }, 3000);
+    return () => clearInterval(slider);
+  }, []);
+
   return (
     <div className="about_container">
       <div className="about_wrapper">
@@ -35,11 +59,10 @@ const About = () => {
             Жить в <b>IDEAL</b>! Создавать прекрасное. Вдохновлять. Все это и
             многое другое мы — фотостудия IDEAL DIZAYN. В нашем портфолио
             большой опыт работы крупнейшими компаниями СМИ, а также
-            сотрудничество с известными мировыми брендами как <b> VIP Brand</b>
-            , <b>NEXT</b>, <b>RICHMAN</b>, <b>Sariq Bola</b>,
-            <b>Oqtepa Lavash</b>, <b>EVOS</b> и другие. Мы проводим рекламные
-            услуги , смело беремся за сложные задачи и создаем невероятные
-            проекты.
+            сотрудничество с известными мировыми брендами как <b> VIP Brand</b>,{" "}
+            <b>NEXT</b>, <b>RICHMAN</b>, <b>Sariq Bola</b>,<b>Oqtepa Lavash</b>,{" "}
+            <b>EVOS</b> и другие. Мы проводим рекламные услуги , смело беремся
+            за сложные задачи и создаем невероятные проекты.
           </p>
           <p>
             Вы привыкли работать только с профессионалами, выбирать лучшее и не
@@ -55,14 +78,46 @@ const About = () => {
             Мы верим в доброту, красоту, профессионализм и любовь к своему делу!
           </p>
         </div>
+
+        <div className="about_comments">
+          <h1>Отзивы</h1>
+          <div className="section-center">
+            {people.map((person, personIndex) => {
+              let position = "nextSlide";
+              if (personIndex === index) {
+                position = "activeSlide";
+              }
+              if (
+                personIndex === index - 1 ||
+                (index === 0 && personIndex === people.length - 1)
+              ) {
+                position = "lastSlide";
+              }
+              return (
+                <article className={position} key={person.id}>
+                  <img
+                    className="person-img"
+                    src={person.image}
+                    alt={person.title}
+                  />
+                  <h4>{person.name}</h4>
+                  <p className="title">{person.title}</p>
+                  <p className="text">{person.quote}</p>
+                  <FaQuoteRight className="icon" />
+                </article>
+              );
+            })}
+            <button className="prev" onClick={() => setIndex(index - 1)}>
+              <FiChevronLeft />
+            </button>
+            <button className="next" onClick={() => setIndex(index + 1)}>
+              <FiChevronRight />
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
 export default About;
-
-// <p>
-// Фотостудия быстрого и качественных услуг. В первый рейтенги в
-// Узбекситане а иммино в районе "Сергели".
-// </p>
