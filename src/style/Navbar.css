@@ -60,7 +60,15 @@
   .navbar_wrapper {
     padding: 0 2rem;
   }
+  .navbar_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .navbar_logo img {
+    padding: 0;
+    height: 30px;
+    width: 100%;
   }
   .bar_container {
     display: block;
