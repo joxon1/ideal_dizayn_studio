@@ -54,6 +54,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .navbar_logo{
+    height: 90%;
+  }
   .navbar_link {
     display: none;
   }
@@ -82,4 +85,5 @@
       rgba(11, 108, 133, 0.999)
     );
   }
+  
 }
