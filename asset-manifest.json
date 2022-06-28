@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ideal_dizayn_studio/static/css/main.2b4a4b80.css",
-    "main.js": "/ideal_dizayn_studio/static/js/main.7bf76514.js",
+    "main.js": "/ideal_dizayn_studio/static/js/main.b1449892.js",
     "static/media/692621.jpg": "/ideal_dizayn_studio/static/media/692621.89934bfb38e09d1d1930.jpg",
     "static/media/fon.jpg": "/ideal_dizayn_studio/static/media/fon.29e65c91930d9724884b.jpg",
     "static/media/lenta-1.jpg": "/ideal_dizayn_studio/static/media/lenta-1.63f712bc1bc85287d4d5.jpg",
@@ -16,10 +16,10 @@
     "static/media/image4.jfif": "/ideal_dizayn_studio/static/media/image4.404932e03ffe45c40d57.jfif",
     "index.html": "/ideal_dizayn_studio/index.html",
     "main.2b4a4b80.css.map": "/ideal_dizayn_studio/static/css/main.2b4a4b80.css.map",
-    "main.7bf76514.js.map": "/ideal_dizayn_studio/static/js/main.7bf76514.js.map"
+    "main.b1449892.js.map": "/ideal_dizayn_studio/static/js/main.b1449892.js.map"
   },
   "entrypoints": [
     "static/css/main.2b4a4b80.css",
-    "static/js/main.7bf76514.js"
+    "static/js/main.b1449892.js"
   ]
 }
