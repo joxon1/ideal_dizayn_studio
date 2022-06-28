@@ -73,13 +73,13 @@
   color: red;
 }
 @media screen and (max-width: 768px) {
-  .contact_container{
+  .contact_container {
     padding: 90px 20px;
   }
   .contact_back {
     grid-template-columns: none;
     grid-template-rows: repeat(1fr);
     align-items: flex-start;
-    justify-items: self-start;
+    justify-items: start;
   }
 }
