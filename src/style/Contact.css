@@ -7,10 +7,68 @@
   background-repeat: no-repeat;
   padding: 90px 70px;
 }
+.contact_wrapper h1 {
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
 .contact_back {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 2rem 1rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(177, 177, 177, 0.9),
+    rgba(145, 145, 145, 0.3)
+  );
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+  align-items: center;
+  justify-items: center;
+}
+.contact_back h3 {
+  font-style: italic;
+}
+.contact_back b {
+  color: red;
+}
+.taxi {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0.1),
+    rgba(255, 0, 0, 0.9)
+  );
+  transition: 350ms;
+  transform: translateY(0);
+}
+.taxi:hover,
+.taxi:active {
   background: linear-gradient(
     to top,
-    rgba(255, 255, 255, 0.5),
-    rgba(255, 255, 255, 0.9)
+    rgba(255, 0, 0, 0.1),
+    rgba(255, 0, 0, 0.9)
   );
+  transition: 350ms;
+  transform: translateY(-5px);
+}
+.adres_hr {
+  width: 100%;
+  border-bottom: 1px solid red;
+}
+.icon {
+  flex-direction: column;
+  color: #fff;
+  transition: 350ms;
+  transform: translateY(0);
+}
+.icon:hover {
+  transition: 350ms;
+  transform: translateY(-5px);
+  color: red;
 }
