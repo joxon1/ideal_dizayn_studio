@@ -40,15 +40,23 @@ const Contact = () => {
         </div>
         <h1>Социальные Мессенджеры</h1>
         <div className="contact_back contact_sotsional">
-          <a href="" className="icon" target="_blank">
+          <a href="https://t.me/ideal_dizayn" className="icon" target="_blank">
             <FaTelegram />
           </a>
 
-          <a href="" className="icon" target="_blank">
+          <a
+            href="https://www.instagram.com/invites/contact/?i=1jtgr63uedyzk&utm_content=1wx6r6y"
+            className="icon"
+            target="_blank"
+          >
             <FaInstagram />
           </a>
 
-          <a className="icon" href="" target="_blank">
+          <a
+            className="icon"
+            href="https://www.youtube.com/channel/UC7VOPH9OjlXhO6v5Xmrupdg"
+            target="_blank"
+          >
             <FaYoutube />
           </a>
         </div>
