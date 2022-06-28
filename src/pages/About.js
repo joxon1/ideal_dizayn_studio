@@ -4,7 +4,7 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import { FaQuoteRight } from "react-icons/fa";
 
 import "../style/About.css";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 const About = () => {
   const [people, setPeople] = useState(AboutSlider);
