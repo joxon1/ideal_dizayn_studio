@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/ideal_dizayn_studio/static/css/main.32b6592f.css",
+    "main.js": "/ideal_dizayn_studio/static/js/main.7bf76514.js",
+    "static/media/692621.jpg": "/ideal_dizayn_studio/static/media/692621.89934bfb38e09d1d1930.jpg",
+    "static/media/fon.jpg": "/ideal_dizayn_studio/static/media/fon.29e65c91930d9724884b.jpg",
+    "static/media/lenta-1.jpg": "/ideal_dizayn_studio/static/media/lenta-1.63f712bc1bc85287d4d5.jpg",
+    "static/media/fon3.jpg": "/ideal_dizayn_studio/static/media/fon3.464d74eb869fc4c0d758.jpg",
+    "static/media/lenta-3.jpg": "/ideal_dizayn_studio/static/media/lenta-3.720aa1a25e2d4af99e45.jpg",
+    "static/media/lenta-2.jpg": "/ideal_dizayn_studio/static/media/lenta-2.349e077b9907d59fd9c0.jpg",
+    "static/media/logo_photostudio.png": "/ideal_dizayn_studio/static/media/logo_photostudio.be31bc7c7d6005f17305.png",
+    "static/media/image3.jpg": "/ideal_dizayn_studio/static/media/image3.ce0f185920557df7b888.jpg",
+    "static/media/logo_photostudio — копия.png": "/ideal_dizayn_studio/static/media/logo_photostudio — копия.bcd9a5962fb1b05b4fb0.png",
+    "static/media/image2.jpg": "/ideal_dizayn_studio/static/media/image2.31337e29755d20968b59.jpg",
+    "static/media/image1.jpg": "/ideal_dizayn_studio/static/media/image1.7db6c92d2216c4ba5d0f.jpg",
+    "static/media/image4.jfif": "/ideal_dizayn_studio/static/media/image4.404932e03ffe45c40d57.jfif",
+    "index.html": "/ideal_dizayn_studio/index.html",
+    "main.32b6592f.css.map": "/ideal_dizayn_studio/static/css/main.32b6592f.css.map",
+    "main.7bf76514.js.map": "/ideal_dizayn_studio/static/js/main.7bf76514.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.32b6592f.css",
+    "static/js/main.7bf76514.js"
+  ]
+}
