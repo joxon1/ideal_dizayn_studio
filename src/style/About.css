@@ -17,12 +17,14 @@
   color: #fff;
   text-shadow: 1px 1px 2px #000;
 }
-.about_text_container h1{
+.about_text_container h1 {
   text-align: center;
 }
 .about_text_container p {
   margin-top: 1rem;
 }
+
+
 .about_comments {
   margin-top: 70px;
   background: linear-gradient(

@@ -4,6 +4,7 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import { FaQuoteRight } from "react-icons/fa";
 
 import "../style/About.css";
+import { Link } from "react-router-dom";
 
 const About = () => {
   const [people, setPeople] = useState(AboutSlider);
@@ -22,7 +23,7 @@ const About = () => {
   useEffect(() => {
     const slider = setInterval(() => {
       setIndex(index + 1);
-    }, 3000);
+    }, 10000);
     return () => clearInterval(slider);
   }, []);
 
@@ -78,7 +79,6 @@ const About = () => {
             Мы верим в доброту, красоту, профессионализм и любовь к своему делу!
           </p>
         </div>
-
         <div className="about_comments">
           <h1>Отзивы</h1>
           <div className="section-center">
