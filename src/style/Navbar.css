@@ -54,9 +54,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .navbar_logo{
-    height: 90%;
-  }
   .navbar_link {
     display: none;
   }
@@ -64,7 +61,6 @@
     padding: 0 2rem;
   }
   .navbar_logo img {
-    padding: 1.2rem;
   }
   .bar_container {
     display: block;
@@ -85,5 +81,4 @@
       rgba(11, 108, 133, 0.999)
     );
   }
-  
 }
