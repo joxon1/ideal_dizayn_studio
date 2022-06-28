@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import NavbarData from "../data/NavbarData";
 import "../style/Navbar.css";
 import { FaTimes, FaBars } from "react-icons/fa";
 import logo from "../assets/logo_photostudio.png";
@@ -17,12 +16,22 @@ const Navbar = () => {
         <Link to="/" className="navbar_logo">
           <img src={logo} alt="IDEAL DIZAYN STUDIO" />
         </Link>
-        <div className="navbar_link">
-          {NavbarData.map((item) => (
-            <Link className="navbar_link_item" to={item.path} key={item.id}>
-              {item.link}
-            </Link>
-          ))}
+        <div
+          className={bars ? "mobile_container" : "navbar_link"}
+          onClick={() => showBars(false)}
+        >
+          <Link className="navbar_link_item" to="/">
+            Главный
+          </Link>
+          <Link className="navbar_link_item" to="/prays">
+            Прайслист
+          </Link>
+          <Link className="navbar_link_item" to="/about">
+            О нас
+          </Link>
+          <Link className="navbar_link_item" to="/contact">
+            Контакты
+          </Link>
         </div>
       </div>
     </div>

@@ -7,10 +7,9 @@ const Prays = () => {
     <div className="prays_container">
       {PraysData.map((item) => {
         return (
-          <div className="content">
+          <div className="content" key={item.id}>
             <h2
-              key={item.id}
-              // ref={refs[item.id]}
+            // ref={refs[item.id]}
             >
               {item.category}
             </h2>
